@@ -2,8 +2,12 @@ from selene import by
 from selene.support.conditions import have
 from selene.support.shared import browser
 
+from todomvc_testing.model import todos
+
+todos.open()
+
 # Відкриваємо браузер
-browser.open('http://todomvc.com/examples/emberjs/')
+browser.open('https://todomvc4tasj.herokuapp.com')
 
 # Створюємо першу задачу
 browser.element('#new-todo').type('First').press_enter()
