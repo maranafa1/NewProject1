@@ -16,5 +16,24 @@ def test_auth():
     time.sleep(2)
     s("#regularUserLogin").type("irina071165@gmail.com").press_tab()
     time.sleep(2)
-    s("#regularUserPassword").type().press_enter()
+    s("#regularUserPassword").type("n!vw47Y").press_enter()
+    time.sleep(2)
+    ss(by.text('Шапки'))[1].click()
+    time.sleep(2)
+    s("//img[@title='Купити Бавовняну шапку чорного кольору зі стразами - 56133']").click()
+    time.sleep(2)
+    s("//div[@class='button__inner button__inner--buy']").click()
+    time.sleep(2)
+    s("//div[@class='link__shopping_title']").click()
+    time.sleep(2)
+    s("//div[@class='button__inner button__inner--white']").click()
+    time.sleep(2)
+    ss(".counter__add")[0].click()
+    time.sleep(2)
+    s("//div[@class='icon__trash']").click()
+    time.sleep(2)
+
+
+
+
 
